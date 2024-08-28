@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo Beatriz</title>
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<!---->
+</head>
+<style>
+    body{
+        color: rgb(221, 236, 236);
+        background-color: rgb(13, 12, 12);
+        margin: 3rem;
+    }
+    .header-icons i{
+        color: #eee5e2;
+        text-decoration: none;
+        padding: 10px;
+    }
+    .header-icons a{
+        text-decoration: none;
+    }
+    .header-icons i:hover {
+    color: #d07ec5; /* Example color for hover effect */
+    transition: color 0.3s ease;
+  }
+
+    .about-desc img{
+        border-radius: 20%;
+        height: 15rem;
+    }
+
+    .btn{
+  display: flex;
+  margin: auto;
+  margin-left: 35rem;
+  margin-bottom: 3rem;
+  transform: translate(-50%,-50%);
+
+a{
+  flex-direction: row;
+  color: #c1bfbd;
+  text-decoration: none;
+  padding: 1px 20px; 
+  overflow: hidden;
+  font-family: 'Eagle Lake', serif;
+  font-size: 20px;
+  font-weight:bolder;
+  border-radius: 3%;
+ position: relative;
+  transition: 1s all ease; 
+}
+
+a:hover{
+  color: #d07ec5;
+  height:100%;
+}
+    }
+
+
+</style>
+<body>
+    <header>
+        <div class="header-icons" data-aos="fade-down">
+            <a href="https://www.instagram.com/annie.btrz/" target="_blank">
+              <i class="fa-brands fa-instagram fa-2x"></i>
+            </a>
+            <a href="https://github.com/trizfalabelo" target="_blank">
+              <i class="fa-brands fa-github fa-2x"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/anne-beatriz-reinaldo-falabelo-00b793242/" target="_blank">
+                <i class="fa-brands fa-linkedin fa-2x"></i>
+              </a>
+          </div> <br><br> <br>
+            <nav class="about">
+                <ul class="btn">
+                    <li><a href="#sobre">Sobre mim</a></li>
+                    <li><a href="#educacao">Educação</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#tecnologias">Tecnologias mais usadas</a></li>
+                </ul>
+            </nav>
+    </header>
+    <section class="about-desc">
+        <img src="bia.jpg" alt="foto">
+        <article>Olá, sou a Triz, uma estudante de Engenharia de Software atuando na área de Desenvolvimento Web.</article>
+        <aside>
+            <section id=”habilidades”> 
+
+                <h2>Habilidades e Tecnologias</h2>
+                
+                <table>
+                
+                <thead>
+                
+                <tr>
+                
+                <th>Tecnologias</th>
+                
+                <th>Nível</th>
+                
+                <th>Descrição</th>
+                
+                </tr>
+                
+                <tbody>
+                
+                <tr>
+                
+                <td>HTML</td>
+                <td>Avançado</td>    
+                <td>Capaz de construir estruturas de páginas web semânticas e responsivas.</td>
+                
+                </tr>
+                
+                <tr>
+                <td>CSS</td>
+                <td>Avançado</td>
+                <td>Experiência com flexbox, grid e animações CSS.</td>
+                </tr>
+                
+                <tr>
+                
+                <td>Javascript</td>
+                <td>Avançado</td>            
+                <td>Desenvolvimento de scripts do lado do cliente para interações.</td>
+                
+                </tr>
+                
+                </tbody>
+                
+                </table>
+                
+                </section>
+<br>
+<section id="contato">
+    <h2>Contato</h2>
+    <p>Tem um projeto em mente? Me conta.</p>
+<form action=””>
+    <label for=”nome”>Nome: </label>   
+    <input type=”text” id=”nome”  name=”nome” required>
+    <br><br>
+    
+    <label for=”email”>Email: </label>
+    <input type=”email” id=”email” name=”email” required>
+    
+    <br><br>
+    
+    <label for”telefone”>Telefone: </label>
+    <input type=”tel” id=”telefone” name=”telefone” required>
+    
+    <br><br>
+    
+    <label for=”assunto”>Assunto: </label>
+    <select name=”assunto” id=”assunto”> 
+    <option value=”orcamento”>Orçamento</option>
+    <option value=”duvida”>Dúvida</option> 
+    <option value=”Outro”>Outro</option>  
+    </select>
+    <br><br>
+    
+    <label for=”mensagem”>Mensagem: </label> 
+    <textarea name=”mensagem” id=”mensagem” cols=”20” rows=”5”></textarea>
+    <br>
+    <input type="checkbox" id="inscricao" name="inscricao">
+    <label for="inscricao">Deseja estar por dentro da Newsletter?</label>
+    <br><br>
+    <input type="submit" value="Enviar mensagem">
+    <br>
+    </form>
+    </section>
+</body>
+
+</html>

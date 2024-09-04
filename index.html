@@ -1,176 +1,402 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Currículo Beatriz</title>
-    <!--Font Awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-<!---->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 <style>
-    body{
-        color: rgb(221, 236, 236);
-        background-color: rgb(13, 12, 12);
-        margin: 3rem;
+   body{
+    background: #222;  
+}
+
+.heading {
+  font-size: 92px;
+  line-height: 1;
+}
+
+.heading {
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: url(https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExOWltYW1haDhpc3hxam52ZHc1OXQ5dGhqNXVpYmc5ejBuMTFvNDdzayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xUOxeSTrDP4vsF2TXq/giphy.webp);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: transparent;
+  position: relative;
+}
+
+.box {
+    position: absolute;
+    background: linear-gradient(90deg, #fc466b, #3f5efb);
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    animation: example 8s infinite alternate;
+    filter: blur(100px);
+}
+
+
+@keyframes example {
+    0%{
+        transform: rotatey(30deg) rotate(-25deg) translateZ(100px);
     }
-    .header-icons i{
+    25%{
+        transform: rotateY(-30deg) translateZ(100px);
+    }
+    50%{
+        transform: rotateX(-50deg) translateZ(-100px);
+    }
+    75%{
+        transform: rotateX(-50deg) translateZ(-100px);
+    }
+    100%{
+        transform: rotateX(20deg) translateZ(0);
+    }
+}
+
+    * {
+        margin: 0;
+        padding: 0;
+
+    }
+
+    html,
+    body {
+        height: 100%;
+    }
+
+
+    header {
+        height: 150px;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    .header-icons i {
         color: #eee5e2;
         text-decoration: none;
         padding: 10px;
     }
-    .header-icons a{
+
+    .header-icons a {
         text-decoration: none;
     }
+
     .header-icons i:hover {
-    color: #d07ec5; /* Example color for hover effect */
-    transition: color 0.3s ease;
-  }
+        color: #d07ec5;
+        transition: color 0.3s ease;
+    }
 
-    .about-desc img{
+    .about-desc img {
         border-radius: 20%;
-        height: 15rem;
+        height: 10rem;
     }
 
-    .btn{
-  display: flex;
-  margin: auto;
-  margin-left: 35rem;
-  margin-bottom: 3rem;
-  transform: translate(-50%,-50%);
+    .btn {
+        display: flex;
+        margin: auto;
+        margin-left: 35rem;
+        margin-bottom: 3rem;
+        transform: translate(-50%, -50%);
 
-a{
-  flex-direction: row;
-  color: #c1bfbd;
-  text-decoration: none;
-  padding: 1px 20px; 
-  overflow: hidden;
-  font-family: 'Eagle Lake', serif;
-  font-size: 20px;
-  font-weight:bolder;
-  border-radius: 3%;
- position: relative;
-  transition: 1s all ease; 
-}
+        a {
+            flex-direction: row;
+            color: #c1bfbd;
+            text-decoration: none;
+            padding: 1px 20px;
+            overflow: hidden;
+            font-family: 'Eagle Lake', serif;
+            font-size: 20px;
+            font-weight: bolder;
+            border-radius: 3%;
+            position: relative;
+            transition: 1s all ease;
+        }
 
-a:hover{
-  color: #d07ec5;
-  height:100%;
-}
+        a:hover {
+            color: #d07ec5;
+            height: 100%;
+        }
     }
 
 
+    #nav-bar {
+        position: relative;
+    }
+
+    .nav-toggle {
+        display: none;
+        cursor: pointer;
+        background: none;
+        border: none;
+        font-size: 24px;
+        color: #eae4e4;
+        margin-left: 20rem;
+    }
+
+
+    .btn {
+        list-style-type: none;
+        display: flex;
+        gap: 20px;
+        transition: all 0.3s;
+    }
+
+    .about-desc {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+        padding-top: 10rem;
+    }
+
+    .about-desc img {
+        max-width: 200px;
+        border-radius: 10px;
+        height: 140px;
+    }
+
+    .about-desc article {
+        flex: 1;
+        font-size: 19px;
+        line-height: 1.6;
+        font-weight: 500;
+        margin-left: 5px;
+        padding-right: 5px;
+    }
+
+    .tech {
+        top: 1px;
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    table {
+        width: 50%;
+        border-collapse: collapse;
+        margin: 0 auto;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        background-color: #b4b3b3;
+    }
+
+    thead {
+        background-color: #606260;
+        color: rgb(219, 212, 212);
+    }
+
+    th,
+    td {
+        padding: 15px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+        color: #333;
+    }
+
+    tbody tr:nth-child(even) {
+        background-color: #bab7b7;
+    }
+
+    tbody tr:hover {
+        background-color: #f1f1f1;
+        cursor: pointer;
+    }
+
+    th {
+        font-weight: bold;
+        font-size: 1.1em;
+        color: #fff7f7;
+    }
+
+    td {
+        font-size: 1em;
+    }
+
+
+
+    @media (max-width: 768px) {
+        .nav-toggle {
+            top: 80px;
+            display: flex;
+            margin-left: 24rem;
+        }
+
+        .btn {
+            display: none;
+            flex-direction: column;
+            gap: 10px;
+            margin-left: 200px;
+            background-color: #e4dfdf;
+            color: #333;
+            padding: 10px 0;
+            position: absolute;
+            top: 100px;
+            width: 100%;
+            border-top: 1px solid #ccc;
+            z-index: 10000;
+        }
+
+        .btn a {
+            color: #3a3a3a;
+        }
+
+        .btn.show {
+            display: flex;
+        }
+
+        .about-desc {
+            flex-direction: row;
+        }
+
+        .about-desc {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .about-desc img {
+            max-width: 200px;
+            border-radius: 10px;
+            height: 140px;
+        }
+
+        .about-desc article {
+            flex: 1;
+            font-size: 13.5px;
+            line-height: 1.6;
+            font-weight: 500;
+            margin-left: 5px;
+            padding-right: 5px;
+        }
+
+        .heading {
+           font-size: 52px;
+           margin-top: 10rem ;
+}
+
+        table {
+            width: 100%;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            font-size: 0.9em;
+        }
+
+    }
 </style>
+
 <body>
     <header>
         <div class="header-icons" data-aos="fade-down">
             <a href="https://www.instagram.com/annie.btrz/" target="_blank">
-              <i class="fa-brands fa-instagram fa-2x"></i>
+                <i class="fa-brands fa-instagram fa-2x"></i>
             </a>
             <a href="https://github.com/trizfalabelo" target="_blank">
-              <i class="fa-brands fa-github fa-2x"></i>
+                <i class="fa-brands fa-github fa-2x"></i>
             </a>
             <a href="https://www.linkedin.com/in/anne-beatriz-reinaldo-falabelo-00b793242/" target="_blank">
                 <i class="fa-brands fa-linkedin fa-2x"></i>
-              </a>
-          </div> <br><br> <br>
-            <nav class="about">
-                <ul class="btn">
-                    <li><a href="#sobre">Sobre mim</a></li>
-                    <li><a href="#educacao">Educação</a></li>
-                    <li><a href="#projetos">Projetos</a></li>
-                    <li><a href="#tecnologias">Tecnologias mais usadas</a></li>
-                </ul>
-            </nav>
+            </a>
+        </div> <br><br> <br>
+        <nav id="nav-bar">
+            <button class="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="btn">
+                <li><a href="#sobre">Sobre mim</a></li>
+                <li><a href="#educacao">Educação</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#tecnologias">Tecnologias mais usadas</a></li>
+            </ul>
+        </nav>
     </header>
-    <section class="about-desc">
-        <img src="bia.jpg" alt="foto">
-        <article>Olá, sou a Triz, uma estudante de Engenharia de Software atuando na área de Desenvolvimento Web.</article>
-        <aside>
-            <section id=”habilidades”> 
 
-                <h2>Habilidades e Tecnologias</h2>
-                
-                <table>
-                
+    <section class="about-desc">
+       
+        <article><h1 class="heading">Beatriz Falabelo</h1>
+            Olá, eu sou a Triz, uma estudante de Engenharia de Software atuando na área de Desenvolvimento Web.
+            Tenho 24 anos, moro em Joinville.</article>
+    </section> 
+    <aside>
+        <section class=”habilidades” id="habilidades">
+            <h2 class="tech">Habilidades e Tecnologias</h2>
+            <table>
                 <thead>
-                
-                <tr>
-                
-                <th>Tecnologias</th>
-                
-                <th>Nível</th>
-                
-                <th>Descrição</th>
-                
-                </tr>
-                
+                    <tr>
+                        <th>Tecnologias</th>
+                        <th>Nível</th>
+                        <th>Descrição</th>
+                    </tr>
                 <tbody>
-                
-                <tr>
-                
-                <td>HTML</td>
-                <td>Avançado</td>    
-                <td>Capaz de construir estruturas de páginas web semânticas e responsivas.</td>
-                
-                </tr>
-                
-                <tr>
-                <td>CSS</td>
-                <td>Avançado</td>
-                <td>Experiência com flexbox, grid e animações CSS.</td>
-                </tr>
-                
-                <tr>
-                
-                <td>Javascript</td>
-                <td>Avançado</td>            
-                <td>Desenvolvimento de scripts do lado do cliente para interações.</td>
-                
-                </tr>
-                
+                    <tr>
+                        <td>HTML</td>
+                        <td>Avançado</td>
+                        <td>Capaz de construir estruturas de páginas web semânticas e responsivas.</td>
+                    </tr>
+                    <tr>
+                        <td>CSS</td>
+                        <td>Avançado</td>
+                        <td>Experiência com flexbox, grid e animações CSS.</td>
+                    </tr>
+                    <tr>
+                        <td>Javascript</td>
+                        <td>Avançado</td>
+                        <td>Desenvolvimento de scripts do lado do cliente para interações.</td>
+                    </tr>
                 </tbody>
-                
-                </table>
-                
-                </section>
-<br>
-<section id="contato">
-    <h2>Contato</h2>
-    <p>Tem um projeto em mente? Me conta.</p>
-<form action=””>
-    <label for=”nome”>Nome: </label>   
-    <input type=”text” id=”nome”  name=”nome” required>
-    <br><br>
-    
-    <label for=”email”>Email: </label>
-    <input type=”email” id=”email” name=”email” required>
-    
-    <br><br>
-    
-    <label for”telefone”>Telefone: </label>
-    <input type=”tel” id=”telefone” name=”telefone” required>
-    
-    <br><br>
-    
-    <label for=”assunto”>Assunto: </label>
-    <select name=”assunto” id=”assunto”> 
-    <option value=”orcamento”>Orçamento</option>
-    <option value=”duvida”>Dúvida</option> 
-    <option value=”Outro”>Outro</option>  
-    </select>
-    <br><br>
-    
-    <label for=”mensagem”>Mensagem: </label> 
-    <textarea name=”mensagem” id=”mensagem” cols=”20” rows=”5”></textarea>
-    <br>
-    <input type="checkbox" id="inscricao" name="inscricao">
-    <label for="inscricao">Deseja estar por dentro da Newsletter?</label>
-    <br><br>
-    <input type="submit" value="Enviar mensagem">
-    <br>
-    </form>
-    </section>
+            </table>
+        </section>
+        <br>
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Tem um projeto em mente? Me conta.</p>
+            <form action=””>
+                <label for=”nome”>Nome: </label>
+                <input type=”text” id=”nome” name=”nome” required>
+                <br><br>
+
+                <label for=”email”>Email: </label>
+                <input type=”email” id=”email” name=”email” required>
+
+                <br><br>
+
+                <label for”telefone”>Telefone: </label>
+                <input type=”tel” id=”telefone” name=”telefone” required>
+
+                <br><br>
+
+                <label for=”assunto”>Assunto: </label>
+                <select name=”assunto” id=”assunto”>
+                    <option value=”orcamento”>Orçamento</option>
+                    <option value=”duvida”>Dúvida</option>
+                    <option value=”Outro”>Outro</option>
+                </select>
+                <br><br>
+
+                <label for=”mensagem”>Mensagem: </label>
+                <textarea name=”mensagem” id=”mensagem” cols=”20” rows=”5”></textarea>
+                <br>
+                <input type="checkbox" id="inscricao" name="inscricao">
+                <label for="inscricao">Deseja estar por dentro da Newsletter?</label>
+                <br><br>
+                <input type="submit" value="Enviar mensagem">
+                <br>
+            </form>
+        </section>
+
+        <script src="script.js"></script>
 </body>
 
 </html>
